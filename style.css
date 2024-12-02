@@ -1,0 +1,595 @@
+/* General Styles */
+.spicy-rice-regular {
+    font-family: "Glass Antiqua";
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: "Glass Antiqua";
+    background-color: #ffffff;
+  }
+  
+/*Home Section*/
+
+  .home-title-card {
+    background-color: #f1ccde; /* Card background color */
+    color: #f1ccde; /* Text color */
+    text-align: center;
+    border-radius: 40px;
+    padding: 100px;
+    margin: 60px auto;
+    max-width: 600px; /* Adjust width */
+    box-shadow: 0px 4px 10px #fff(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+.home-title-card .card-title {
+    font-family: "Glass Antiqua";
+    font-size: 66px;
+    margin-bottom: 10px;
+    color: #f1ccde; /* Accent color */
+    text-shadow: 2px 2px #f9f9f9; /* Add depth to text */
+}
+
+.home-title-card .card-text {
+    font-family: "Glass Antiqua";
+    font-size: 50px;
+    margin-top: 5px;
+    color: #f1ccde;
+}
+
+
+/* Basic styles for navbar */
+.navbar {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding: 30px 20px;
+    background-color: #ffffff;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-logo a {
+    color: #f5c0d2;
+    font-size: 60px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Navbar menu container */
+.navbar-menu {
+    display: none;  /* Hidden by default */
+    position: absolute;
+    top: 50px;  /* Adjust based on your navbar height */
+    left: 0;
+    width: 100%;
+    background-color: #f5c0d2;
+    text-align: left;
+    padding: 20px 0;
+    z-index: 900;
+}
+
+/* Logo in Menu */
+.menu-logo {
+    margin-bottom: 10px;
+    text-align: center
+}
+
+.menu-logo img {
+    width: 200px;
+    height: auto;
+    display: block;
+    text-align: left; /* Default position */
+
+}
+
+/* Navbar menu items */
+.navbar-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar menu items */
+.navbar-menu ul li {
+    margin: 10px 0;
+}
+
+.navbar-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    display: list-item; /* Make the links fill the entire width */
+}
+
+/* Hover effect for menu items */
+.navbar-menu ul li a:hover {
+    background-color: #f5c0d2;
+    border-radius: 5px;
+}
+
+/* When the menu is opened (class 'open' added) */
+.navbar-menu.open {
+    display: list-item;  /* Show the menu when the class 'open' is added */
+}
+
+/* Optional: Add a slight effect when the logo is clicked */
+.navbar-logo a {
+    transition: transform 0.2s ease;
+}
+
+.navbar-logo a:hover {
+    transform: scale(1.1);  /* Slight scale effect on hover */
+    
+}
+
+  /* Show Menu on Checkbox Checked */
+  #toggle-menu:checked ~ .menu {
+    display: flex;
+  }
+  
+  /* Hamburger Animation when Checked */
+  #toggle-menu:checked + .hamburger-menu span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  #toggle-menu:checked + .hamburger-menu span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  #toggle-menu:checked + .hamburger-menu span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  #frame {
+    margin: 0 auto;
+    width: 800px;
+    max-width: 100%;
+    text-align: center;
+}
+
+#frame input[type=radio] {
+    display: none;
+}
+
+#frame label {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#slides {
+    padding: 5px;
+    border: 5px solid hsl(0, 0%, 100%);
+    background: hsl(0, 0%, 100%);
+    position: relative;
+    z-index: 1,
+}
+
+#overflow {
+    width: 100%;
+    overflow: hidden;
+}
+
+#frame1:checked~#slides .inner {
+    margin-left: 0;
+}
+
+#frame2:checked~#slides .inner {
+    margin-left: -100%;
+}
+
+#frame3:checked~#slides .inner {
+    margin-left: -200%;
+}
+
+#frame4:checked~#slides .inner {
+    margin-left: -300%;
+}
+
+#slides .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    height: 300px;
+}
+
+#slides .frame {
+    width: 25%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    color: #c05a7d;
+}
+
+#slides .frame_1 {
+    background: hsl(0, 0%, 100%);
+}
+
+#slides .frame_2 {
+    background: hsl(0, 0%, 100%);
+}
+
+#slides .frame_3 {
+    background: hsl(0, 0%, 100%);
+}
+
+#slides .frame_4 {
+    background: hsl(0, 0%, 98%);
+}
+
+#controls {
+    margin: -180px 0 0 0;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+}
+
+#controls label {
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 50px;
+    height: 50px;
+    opacity: .4;
+}
+
+#controls label:hover {
+    opacity: 1;
+}
+
+#frame1:checked~#controls label:nth-child(2),
+#frame2:checked~#controls label:nth-child(3),
+#frame3:checked~#controls label:nth-child(4),
+#frame4:checked~#controls label:nth-child(1) {
+    
+    float: right;
+    margin: 0 -50px 0 0;
+    display: block;
+}
+
+#frame1:checked~#controls label:nth-last-child(2),
+#frame2:checked~#controls label:nth-last-child(3),
+#frame3:checked~#controls label:nth-last-child(4),
+#frame4:checked~#controls label:nth-last-child(1) {
+   
+    float: left;
+    margin: 0 0 0 -50px;
+    display: block;
+}
+
+#bullets {
+    margin: 150px 0 0;
+    text-align: center;
+}
+
+#bullets label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #ccc;
+    margin: 0 10px;
+}
+
+#frame1:checked~#bullets label:nth-child(1),
+#frame2:checked~#bullets label:nth-child(2),
+#frame3:checked~#bullets label:nth-child(3),
+#frame4:checked~#bullets label:nth-child(4) {
+    background: #444;
+}
+
+@media screen and (max-width: 900px) {
+
+    #frame1:checked~#controls label:nth-child(2),
+    #frame2:checked~#controls label:nth-child(3),
+    #frame3:checked~#controls label:nth-child(4),
+    #frame4:checked~#controls label:nth-child(1),
+    #frame1:checked~#controls label:nth-last-child(2),
+    #frame2:checked~#controls label:nth-last-child(3),
+    #frame3:checked~#controls label:nth-last-child(4),
+    #frame4:checked~#controls label:nth-last-child(1) {
+        margin: 0;
+    }
+
+    #slides {
+        max-width: calc(100% - 140px);
+        margin: 0 auto;
+    }
+}
+
+/* Photo Gallery Section */
+.photo-gallery {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.photo-gallery h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #f1ccde;
+}
+
+/* Gallery Container */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Gallery Items */
+.gallery-item {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px #f1ccde(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    display: block;
+}
+
+/* Hover Effect for Images */
+.gallery-item:hover img {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* About Us Section */
+#about-us {
+    font-family: "Glass Antiqua";
+    padding: 50px 20px;
+    background: #fff;
+    color: #f1ccde;
+    text-align: center;
+    border-radius: 16px;
+    margin: 40px auto;
+    max-width: 900px;
+    box-shadow: 0px 4px 15px #f1f1f1(0, 0, 0, 0.2);
+}
+
+#about-us:hover {
+    box-shadow: 0px 6px 15px #f1ccde(255, 255, 255, 0.3);
+}
+
+/* Heading in About Us Section */
+.about-intro h1 {
+    font-size: 48px; /* Larger size for header */
+    margin-bottom: 20px;
+    color: #f1ccde;
+    text-transform: none;
+    text-shadow: 3px 3px 5px #f1ccde(0, 0, 0, 0.5);
+}
+
+.about-intro h1 span {
+    color: #f1ccde; /* Accent color for "The Station" */
+    text-shadow: 3px 3px 5px #f1ccde(0, 0, 0, 0.6);
+}
+
+/* Paragraph in About Us Section */
+.about-intro p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #f1ccde;
+    margin: 0 auto;
+    max-width: 750px;
+    text-shadow: 1px 1px 3px #f1ccde(0, 0, 0, 0.4);
+}
+
+/* Our Values Section */
+.our-values {
+    text-align: center;
+    margin: 60px auto;
+    padding: 30px 20px;
+    background-color: #ffffff; /* White background for values section */
+    color: #000; /* Dark text color */
+    border-radius: 16px;
+    max-width: 900px;
+    box-shadow: 0px 4px 15px #fff(0, 0, 0, 0.1);
+}
+
+.our-values h2 {
+    font-size: 36px;
+    color: #f1ccde;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Values Cards Container */
+.values-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Individual Value Card */
+.value-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px #f1ccde (0, 0, 0, 0.1);
+    width: 280px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.value-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0px 12px 20px #f1ccde (0, 0, 0, 0.2);
+}
+
+.value-card h3 {
+    color: #f1ccde; /* Accent color */
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.value-card p {
+    font-size: 16px;
+    color: #f1ccde; /* Dark text for readability */
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #about-us {
+        padding: 40px 20px;
+    }
+
+    .about-intro h1 {
+        font-size: 32px;
+    }
+
+    .about-intro p {
+        font-size: 16px;
+    }
+
+    .our-values h2 {
+        font-size: 28px;
+    }
+
+    .value-card {
+        width: 90%; /* Adjust card width for smaller screens */
+    }
+}
+
+
+/* Map Section */
+.location {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.location p {
+    font-size: 18px;
+}
+
+.map-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+iframe {
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    box-shadow: 0 4px 6px #fff(0, 0, 0, 0.1);
+}
+
+
+/* Cards Section */
+.cards-section {
+    font-family: "Glass Antiqua";
+    background-color: #fff;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.section-header h2 {
+    font-family: "Glass Antiqua";
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #f5c0d2;
+}
+
+.section-header p {
+    font-size: 18px;
+    font-family: "Glass Antiqua";
+    margin-bottom: 40px;
+    color: #f5c0d2;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Cards Container */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual Card */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px #FF69B4(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px #f1ccde(0, 0, 0, 0.2);
+}
+
+.card-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content {
+    font-size: 20px;
+    color: #f5c0d2;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 16px;
+    color: #FF69B4;
+    line-height: 1.6;
+}
+/* Style the container */
+.social-media {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style the links */
+.social-media a {
+    margin: 0 10px; /* Space out the icons */
+    text-decoration: none; /* Remove the underline */
+    font-size: 40px; /* Set the icon size */
+    color: #f1ccde; /* Default icon color */
+}
+
+/* Change icon color on hover */
+.social-media a:hover {
+    color: #f5c0d2; /* Change color on hover */
+}
+
+/* Optionally, add a circle background around the icons */
+.social-media a i {
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+/* Add a hover effect on the background */
+.social-media a:hover i {
+    background-color: #f5c0d2;
+    color: #fff; /* Change icon color on hover */
+}
