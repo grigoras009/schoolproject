@@ -1,4 +1,3 @@
-/* General Styles */
 .spicy-rice-regular {
     font-family: "Glass Antiqua";
     font-weight: 200;
@@ -10,25 +9,23 @@
     background-color: #ffffff;
   }
   
-/*Home Section*/
-
   .home-title-card {
-    background-color: #f1ccde; /* Card background color */
-    color: #f1ccde; /* Text color */
+    background-color: #f1ccde;
+    color: #f1ccde; 
     text-align: center;
     border-radius: 40px;
     padding: 100px;
     margin: 60px auto;
-    max-width: 600px; /* Adjust width */
-    box-shadow: 0px 4px 10px #fff(0, 0, 0, 0.2); /* Add shadow for depth */
+    max-width: 600px; 
+    box-shadow: 0px 4px 10px #fff(0, 0, 0, 0.2);
 }
 
 .home-title-card .card-title {
     font-family: "Glass Antiqua";
     font-size: 66px;
     margin-bottom: 10px;
-    color: #f1ccde; /* Accent color */
-    text-shadow: 2px 2px #f9f9f9; /* Add depth to text */
+    color: #f1ccde;
+    text-shadow: 2px 2px #f9f9f9;
 }
 
 .home-title-card .card-text {
@@ -38,8 +35,6 @@
     color: #f1ccde;
 }
 
-
-/* Basic styles for navbar */
 .navbar {
     display: flex;
     justify-content: left;
@@ -58,11 +53,10 @@
     cursor: pointer;
 }
 
-/* Navbar menu container */
 .navbar-menu {
-    display: none;  /* Hidden by default */
+    display: none;
     position: absolute;
-    top: 50px;  /* Adjust based on your navbar height */
+    top: 50px;
     left: 0;
     width: 100%;
     background-color: #f5c0d2;
@@ -71,7 +65,7 @@
     z-index: 900;
 }
 
-/* Logo in Menu */
+
 .menu-logo {
     margin-bottom: 10px;
     text-align: center
@@ -81,18 +75,16 @@
     width: 200px;
     height: auto;
     display: block;
-    text-align: left; /* Default position */
+    text-align: left;
 
 }
 
-/* Navbar menu items */
 .navbar-menu ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-/* Navbar menu items */
 .navbar-menu ul li {
     margin: 10px 0;
 }
@@ -102,36 +94,33 @@
     text-decoration: none;
     font-size: 20px;
     padding: 10px 20px;
-    display: list-item; /* Make the links fill the entire width */
+    display: list-item; 
 }
 
-/* Hover effect for menu items */
 .navbar-menu ul li a:hover {
     background-color: #f5c0d2;
     border-radius: 5px;
 }
 
-/* When the menu is opened (class 'open' added) */
 .navbar-menu.open {
-    display: list-item;  /* Show the menu when the class 'open' is added */
+    display: list-item; 
 }
 
-/* Optional: Add a slight effect when the logo is clicked */
 .navbar-logo a {
     transition: transform 0.2s ease;
 }
 
 .navbar-logo a:hover {
-    transform: scale(1.1);  /* Slight scale effect on hover */
+    transform: scale(1.1);
     
 }
 
-  /* Show Menu on Checkbox Checked */
+
   #toggle-menu:checked ~ .menu {
     display: flex;
   }
   
-  /* Hamburger Animation when Checked */
+
   #toggle-menu:checked + .hamburger-menu span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
   }
@@ -302,7 +291,6 @@
     }
 }
 
-/* Photo Gallery Section */
 .photo-gallery {
     text-align: center;
     padding: 50px 20px;
@@ -315,7 +303,6 @@
     color: #f1ccde;
 }
 
-/* Gallery Container */
 .gallery-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -324,7 +311,6 @@
     margin: 0 auto;
 }
 
-/* Gallery Items */
 .gallery-item {
     overflow: hidden;
     border-radius: 8px;
@@ -338,13 +324,12 @@
     display: block;
 }
 
-/* Hover Effect for Images */
+
 .gallery-item:hover img {
     transform: scale(1.1);
     opacity: 0.8;
 }
 
-/* About Us Section */
 #about-us {
     font-family: "Glass Antiqua";
     padding: 50px 20px;
@@ -361,9 +346,9 @@
     box-shadow: 0px 6px 15px #f1ccde(255, 255, 255, 0.3);
 }
 
-/* Heading in About Us Section */
+
 .about-intro h1 {
-    font-size: 48px; /* Larger size for header */
+    font-size: 48px;
     margin-bottom: 20px;
     color: #f1ccde;
     text-transform: none;
@@ -371,11 +356,10 @@
 }
 
 .about-intro h1 span {
-    color: #f1ccde; /* Accent color for "The Station" */
+    color: #f1ccde;
     text-shadow: 3px 3px 5px #f1ccde(0, 0, 0, 0.6);
 }
 
-/* Paragraph in About Us Section */
 .about-intro p {
     font-size: 18px;
     line-height: 1.6;
@@ -385,13 +369,12 @@
     text-shadow: 1px 1px 3px #f1ccde(0, 0, 0, 0.4);
 }
 
-/* Our Values Section */
 .our-values {
     text-align: center;
     margin: 60px auto;
     padding: 30px 20px;
-    background-color: #ffffff; /* White background for values section */
-    color: #000; /* Dark text color */
+    background-color: #ffffff; 
+    color: #000;
     border-radius: 16px;
     max-width: 900px;
     box-shadow: 0px 4px 15px #fff(0, 0, 0, 0.1);
@@ -406,7 +389,6 @@
     letter-spacing: 2px;
 }
 
-/* Values Cards Container */
 .values-container {
     display: flex;
     flex-wrap: wrap;
@@ -414,7 +396,6 @@
     gap: 30px;
 }
 
-/* Individual Value Card */
 .value-card {
     background: #fff;
     padding: 25px;
@@ -425,12 +406,12 @@
 }
 
 .value-card:hover {
-    transform: translateY(-5px); /* Slight lift on hover */
+    transform: translateY(-5px);
     box-shadow: 0px 12px 20px #f1ccde (0, 0, 0, 0.2);
 }
 
 .value-card h3 {
-    color: #f1ccde; /* Accent color */
+    color: #f1ccde;
     margin-bottom: 15px;
     font-size: 22px;
     font-weight: bold;
@@ -438,11 +419,10 @@
 
 .value-card p {
     font-size: 16px;
-    color: #f1ccde; /* Dark text for readability */
+    color: #f1ccde;
     line-height: 1.6;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     #about-us {
         padding: 40px 20px;
@@ -461,12 +441,10 @@
     }
 
     .value-card {
-        width: 90%; /* Adjust card width for smaller screens */
+        width: 90%;
     }
 }
 
-
-/* Map Section */
 .location {
     text-align: center;
     margin: 40px 0;
@@ -492,7 +470,6 @@ iframe {
 }
 
 
-/* Cards Section */
 .cards-section {
     font-family: "Glass Antiqua";
     background-color: #fff;
@@ -517,7 +494,6 @@ iframe {
     margin-right: auto;
 }
 
-/* Cards Container */
 .cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -526,7 +502,6 @@ iframe {
     margin: 0 auto;
 }
 
-/* Individual Card */
 .card {
     background-color: #fff;
     border-radius: 8px;
@@ -561,26 +536,21 @@ iframe {
     color: #FF69B4;
     line-height: 1.6;
 }
-/* Style the container */
 .social-media {
     text-align: center;
     margin-top: 20px;
 }
 
-/* Style the links */
 .social-media a {
-    margin: 0 10px; /* Space out the icons */
-    text-decoration: none; /* Remove the underline */
-    font-size: 40px; /* Set the icon size */
-    color: #f1ccde; /* Default icon color */
+    margin: 0 10px; 
+    text-decoration: none; 
+    color: #f1ccde; 
 }
 
-/* Change icon color on hover */
 .social-media a:hover {
-    color: #f5c0d2; /* Change color on hover */
+    color: #f5c0d2;
 }
 
-/* Optionally, add a circle background around the icons */
 .social-media a i {
     background-color: #fff;
     border-radius: 50%;
@@ -588,8 +558,7 @@ iframe {
     transition: background-color 0.3s;
 }
 
-/* Add a hover effect on the background */
 .social-media a:hover i {
     background-color: #f5c0d2;
-    color: #fff; /* Change icon color on hover */
+    color: #fff;
 }
