@@ -6,33 +6,34 @@
   
   body {
     font-family: "Glass Antiqua";
-    background-color: #ffffff;
+    background-color: #ffff;
   }
-  
-  .home-title-card {
-    background-color: #f1ccde;
-    color: #f1ccde; 
+
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.animated-card {
+    background-color: #c2577c;
+    color: #fbf4f6;
     text-align: center;
-    border-radius: 40px;
+    border-radius: 10px;
     padding: 100px;
-    margin: 60px auto;
-    max-width: 600px; 
-    box-shadow: 0px 4px 10px #fff(0, 0, 0, 0.2);
-}
-
-.home-title-card .card-title {
-    font-family: "Glass Antiqua";
-    font-size: 66px;
-    margin-bottom: 10px;
-    color: #f1ccde;
-    text-shadow: 2px 2px #f9f9f9;
-}
-
-.home-title-card .card-text {
-    font-family: "Glass Antiqua";
-    font-size: 50px;
-    margin-top: 5px;
-    color: #f1ccde;
+    margin: 100px auto;
+    max-width: 400px;
+    box-shadow: 0px 4px 10px #ffffff(0, 0, 0, 0.2);
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    font-size: 30px;
+    line-height: 1.5;
 }
 
 .navbar {
@@ -300,7 +301,7 @@
 .photo-gallery h2 {
     font-size: 32px;
     margin-bottom: 30px;
-    color: #f1ccde;
+    color: #c05a7d;
 }
 
 .gallery-container {
@@ -333,8 +334,8 @@
 #about-us {
     font-family: "Glass Antiqua";
     padding: 50px 20px;
-    background: #fff;
-    color: #f1ccde;
+    background: #f9f9f9;
+    color: #c2577c;
     text-align: center;
     border-radius: 16px;
     margin: 40px auto;
@@ -343,27 +344,26 @@
 }
 
 #about-us:hover {
-    box-shadow: 0px 6px 15px #f1ccde(255, 255, 255, 0.3);
+    box-shadow: 0px 6px 15px #c05a7d(255, 255, 255, 0.3);
 }
-
 
 .about-intro h1 {
     font-size: 48px;
     margin-bottom: 20px;
-    color: #f1ccde;
+    color: #c05a7d;
     text-transform: none;
     text-shadow: 3px 3px 5px #f1ccde(0, 0, 0, 0.5);
 }
 
 .about-intro h1 span {
-    color: #f1ccde;
+    color: #c05a7d;
     text-shadow: 3px 3px 5px #f1ccde(0, 0, 0, 0.6);
 }
 
 .about-intro p {
     font-size: 18px;
     line-height: 1.6;
-    color: #f1ccde;
+    color: #c2577c;
     margin: 0 auto;
     max-width: 750px;
     text-shadow: 1px 1px 3px #f1ccde(0, 0, 0, 0.4);
@@ -382,7 +382,7 @@
 
 .our-values h2 {
     font-size: 36px;
-    color: #f1ccde;
+    color: #c05a7d;
     margin-bottom: 20px;
     font-weight: bold;
     text-transform: uppercase;
@@ -407,11 +407,11 @@
 
 .value-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0px 12px 20px #f1ccde (0, 0, 0, 0.2);
+    box-shadow: 0px 12px 20px #c05a7d (0, 0, 0, 0.2);
 }
 
 .value-card h3 {
-    color: #f1ccde;
+    color: #c05a7d;
     margin-bottom: 15px;
     font-size: 22px;
     font-weight: bold;
@@ -419,7 +419,7 @@
 
 .value-card p {
     font-size: 16px;
-    color: #f1ccde;
+    color: #c05a7d;
     line-height: 1.6;
 }
 
@@ -469,7 +469,6 @@ iframe {
     box-shadow: 0 4px 6px #fff(0, 0, 0, 0.1);
 }
 
-
 .cards-section {
     font-family: "Glass Antiqua";
     background-color: #fff;
@@ -477,18 +476,28 @@ iframe {
     text-align: center;
 }
 
+.card-front {
+    background-color: #f1ccde;
+}
+
+.card-back {
+    background-color: #f1ccde;
+    transform: rotateY(180deg);
+}
+
+
 .section-header h2 {
     font-family: "Glass Antiqua";
     font-size: 36px;
     margin-bottom: 10px;
-    color: #f5c0d2;
+    color: #c05a7d;
 }
 
 .section-header p {
     font-size: 18px;
     font-family: "Glass Antiqua";
     margin-bottom: 40px;
-    color: #f5c0d2;
+    color: #c05a7d;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -512,7 +521,7 @@ iframe {
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 15px #f1ccde(0, 0, 0, 0.2);
+    box-shadow: 0 8px 15px #c05a7d(0, 0, 0, 0.2);
 }
 
 .card-image {
@@ -527,28 +536,23 @@ iframe {
 
 .card-content {
     font-size: 20px;
-    color: #f5c0d2;
+    color: #c2577c;
     margin-bottom: 10px;
 }
 
-.card-content p {
-    font-size: 16px;
-    color: #FF69B4;
-    line-height: 1.6;
-}
 .social-media {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .social-media a {
     margin: 0 10px; 
     text-decoration: none; 
-    color: #f1ccde; 
+    color: #c05a7d; 
 }
 
 .social-media a:hover {
-    color: #f5c0d2;
+    color: #c05a7d;
 }
 
 .social-media a i {
